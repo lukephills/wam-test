@@ -12,7 +12,7 @@ class MyNewSynthController extends WAMController
   static importScripts (actx) {
     var origin = "https://lukephills.github.io/wam-test/";
     return new Promise( (resolve) => {
-      actx.audioWorklet.addModule(origin + "scripts/MyNewSynth-WAM.wasm.js").then(() => {
+      actx.audioWorklet.addModule(origin + "/wam-test/scripts/MyNewSynth-WAM.wasm.js").then(() => {
       actx.audioWorklet.addModule(origin + "scripts/MyNewSynth-WAM.js").then(() => {
       actx.audioWorklet.addModule(origin + "scripts/wam-processor.js").then(() => {
       actx.audioWorklet.addModule(origin + "scripts/MyNewSynth-awp.js").then(() => {
